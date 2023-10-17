@@ -225,6 +225,7 @@ GameObject:
   - component: {fileID: 1517042400}
   - component: {fileID: 1517042399}
   - component: {fileID: 1517042398}
+  - component: {fileID: 1517042403}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -298,7 +299,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -377,6 +378,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1517042403
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517042397}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7103be74b2378d1438ffd9ae269e11f2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullet1: {fileID: 1137248695992303547, guid: acac01aa86135224eafb63366d561746, type: 3}
+  bullet2: {fileID: 3170566286883477870, guid: 1485ec2e9d66b54428346f186678b44d, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

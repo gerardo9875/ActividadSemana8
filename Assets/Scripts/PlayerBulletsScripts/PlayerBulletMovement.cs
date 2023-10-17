@@ -1,20 +1,24 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 
-public class Player_Movement : MonoBehaviour
+public class PlayerBulletMovement : MonoBehaviour
 {
-    public Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     [SerializeField] private float speed;
 
+    Player_Movement mov;
+
     private void Awake()
     {
+        
         rb = GetComponent<Rigidbody2D>();
-       
+        mov = GameObject.FindGameObjectWithTag("Player").GetComponent<Player_Movement>();
+
+        mov = 
     }
-    
+
 
     // Update is called once per frame
     void Update()
@@ -27,12 +31,6 @@ public class Player_Movement : MonoBehaviour
     void Move()
     {
 
-
-        float h = Input.GetAxisRaw("Horizontal");
-        float v = Input.GetAxisRaw("Vertical");
-
-        Vector2 playerinput = new Vector2 (h, v);
-
-        rb.velocity = playerinput * speed;
+        //rb.velocity =
     }
 }
